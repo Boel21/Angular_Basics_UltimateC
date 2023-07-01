@@ -1,0 +1,41 @@
+{
+  "donut": [
+    {
+      "id": "y8olki",
+      "name": "Just Chocolate",
+      "icon": "just-chocolate",
+      "price": 119,
+      "description": "For the pure chocoholic."
+    },
+    {
+      "id": "3u90kl",
+      "name": "Glazed Fudge",
+      "icon": "glazed-fudge",
+      "price": 129,
+      "promo": "limited",
+      "description": "Sticky perfection."
+    },
+    {
+      "id": "ae098f",
+      "name": "Caramel Swirl",
+      "icon": "caramel-swirl",
+      "price": 139,
+      "promo": "new",
+      "description": "Chocolate drizzled with caramel."
+    },
+    {
+      "id": "ghjki5",
+      "name": "Sour Supreme",
+      "icon": "sour-supreme",
+      "price": 139,
+      "description": "For the sour advocate."
+    },
+    {
+      "id": "asdf12",
+      "name": "Zesty Lemon",
+      "icon": "zesty-lemon",
+      "price": 199,
+      "description": "Delicius lucius Lemon."
+    }
+  ]
+}
