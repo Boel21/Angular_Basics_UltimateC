@@ -19,7 +19,7 @@
       "id": "ae098f",
       "name": "Caramel Swirl",
       "icon": "caramel-swirl",
-      "price": 139,
+      "price": 10,
       "promo": "new",
       "description": "Chocolate drizzled with caramel."
     },
@@ -27,7 +27,8 @@
       "id": "ghjki5",
       "name": "Sour Supreme",
       "icon": "sour-supreme",
-      "price": 139,
+      "price": 149,
+      "promo": "new",
       "description": "For the sour advocate."
     },
     {
