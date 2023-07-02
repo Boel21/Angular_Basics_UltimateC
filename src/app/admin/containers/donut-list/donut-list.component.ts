@@ -1,8 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { NgFor, NgIf } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
+import { DonutCardComponent } from '../../componets/donut-card/donut-card.component';
 import { Donut } from '../../models/donut.model';
 import { DonutService } from '../../service/donut.service';
 
 @Component({
+  standalone: true,
+  imports: [RouterModule, DonutCardComponent, NgIf, NgFor],
+  providers: [DonutService],
   selector: 'donut-list',
   template: `
     <div>
@@ -23,26 +30,6 @@ import { DonutService } from '../../service/donut.service';
           [donut]="donut"
         ></donut-card>
       </ng-template>
-
-      <!-- <div
-        *ngFor="
-          let donut of donuts;
-          trackBy: trackById;
-          index as i;
-          odd as o;
-          even as e
-        "
-        [style.color]="e ? 'red' : 'blue'"
-      >
-        {{ i }}
-        {{ o }}
-        {{ e }}
-      </div> -->
-
-      <!-- <ng-template ngFor [ngForOf]="donuts" let-donut let-1="index">
-        <donut-card [donut]="donut"></donut-card>
-      </ng-template> -->
-
       <ng-template #nothing>
         <p>No Donuts here...</p>
       </ng-template>

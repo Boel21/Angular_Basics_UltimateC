@@ -1,9 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { Donut } from '../../models/donut.model';
-import { DonutService } from '../../service/donut.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
+import { DonutFormComponent } from '../../componets/donut-form/donut-form.component';
+import { Donut } from '../../models/donut.model';
+import { DonutService } from '../../service/donut.service';
+
 @Component({
+  standalone: true,
+  imports: [DonutFormComponent],
+  providers: [DonutService],
   selector: 'donut-single',
   template: `
     <p>

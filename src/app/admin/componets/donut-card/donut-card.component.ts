@@ -1,13 +1,25 @@
-import { Component, Input, ViewEncapsulation } from '@angular/core';
+import {
+  CurrencyPipe,
+  NgClass,
+  NgSwitch,
+  NgSwitchCase,
+  NgSwitchDefault,
+} from '@angular/common';
+import { Component, Input } from '@angular/core';
 import { Donut } from '../../models/donut.model';
+import { RouterModule } from '@angular/router';
 
 @Component({
+  standalone: true,
+  imports: [
+    RouterModule,
+    NgClass,
+    NgSwitch,
+    NgSwitchCase,
+    CurrencyPipe,
+    NgSwitchDefault,
+  ],
   selector: 'donut-card',
-  /*[style.border]="donut.promo ? '2px solid #eee' : 'none'"
-  [ngStyle]="{
-    border: donut.promo ? '2px solid #eee' : 'none'
-  }"
-  [class.donut-card-promo]="donut.promo"*/
   template: `
     <a
       class="donut-card"
@@ -32,10 +44,6 @@ import { Donut } from '../../models/donut.model';
                 >Nothing Special</ng-template
               >
             </span>
-
-            <!-- <span *ngSwitchCase="'new'" class="donut-card-label" >New</span>
-            <span *ngSwitchCase="'limited'" class="donut-card-label" >Limited</span>
-            <span *ngSwitchDefault class="donut-card-label">Nopthing special...</span> -->
           </ng-container>
         </p>
         <p class="donut-card-price">

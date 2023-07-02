@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
+  standalone: true,
+  imports: [RouterModule],
   selector: 'app-root',
   template: `
     <div class="app">
       <header class="header">
         <img src="/assets/img/logo.svg" alt="Ultimate Donuts" class="logo" />
       </header>
-      <!-- <donut-single></donut-single> -->
-      <!-- <donut-list></donut-list> -->
       <router-outlet></router-outlet>
     </div>
   `,
