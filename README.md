@@ -50,5 +50,3 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-git push https://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@github.com/Boel21/Angular_V15_Basics_UltimateC.git v1.0 stand_alone_version
